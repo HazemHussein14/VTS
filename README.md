@@ -76,15 +76,17 @@ The Vacation Tracking System (VTS) empowers employees to manage their own vacati
 
 ## **Non-Functional Requirements**
 
-- System performance should ensure responsiveness under high concurrent usage.
-- Security measures must protect sensitive employee data, including role-based access control.
-- High availability to minimize downtime and ensure reliable access.
+- The system must use existing hardware and middleware
+- The system must be easy to use.
 
 ---
 
 ## **Constraints**
 
-- The system must be easy to use, ensuring adoption by all employees regardless of technical proficiency.
+- Legacy Hardware
+- Single-sign-on
+- User experience
+- Integrations with the portal
 
 ---
 
