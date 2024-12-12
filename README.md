@@ -109,15 +109,62 @@ The Vacation Tracking System (VTS) empowers employees to manage their own vacati
 
 1. **Employee**
 
-2. **Location**
+   - id
+   - name
+   - email
+   - role_id
+   - created_at
+   - created_by
 
-3. **Category**
+2. **Role**
 
-4. **Request**
+   - id
+   - role
+   - created_at
+   - created_by
 
-5. **Grant**
+3. **Leave Type**
 
-6. **Restriction**
+   - id
+   - name
+   - description
+   - created_at
+   - created_by
+
+4. **Vacation Request Status**
+
+   - status_id
+   - status_name
+   - created_at
+   - created_by
+
+5. **Leave Balance**
+
+   - id
+   - leave_type_id
+   - employee_id
+   - balance
+   - available_balance
+   - created_at
+   - created_by
+   - modified_at
+   - modified_by
+
+6. **Vacation Request**
+   - request_id
+   - employee_id
+   - manager_id
+   - leave_type_id
+   - status_id
+   - start_date
+   - end_date
+   - requested_balance
+   - description
+   - rejection_message
+   - created_at
+   - created_by
+   - modified_at
+   - modified_by
 
 ## Visual Representations
 
