@@ -1,4 +1,3 @@
-
 # **Vacation Tracking System (VTS)**
 
 ## **Table of Contents**
@@ -12,7 +11,7 @@
 5. [Actors](#actors)
 6. [Domain Knowledge](#domain-knowledge)
 7. [Entities](#entities)
-8. [Pseudo-Code: Manage Time Use Case](#pseudo-code-manage-time-use-case) 
+8. [Pseudo-Code: Manage Time Use Case](#pseudo-code-manage-time-use-case)
 
 ---
 
@@ -106,7 +105,6 @@ The Vacation Tracking System (VTS) empowers employees to manage their own vacati
 
 ---
 
-
 ## **Entities**
 
 1. **Employee**
@@ -121,14 +119,14 @@ The Vacation Tracking System (VTS) empowers employees to manage their own vacati
 
 6. **Restriction**
 
-
 ## Visual Representations
 
 #### **Flowchart: Main System Flow**
 
-The following flowchart illustrates the main flow of the Vacation Tracking System (VTS), showcasing the process from request submission to approval and notification.
+The following flowcharts illustrate the main flow of the Vacation Tracking System (VTS), showcasing the process from request submission to approval and notification.
 
-![VTS Main Flowchart](./VTS-Manage-time-main-flow-flowchart.drawio.png)
+![VTS Manage Time Employee Flowchart](./VTS-Manage-Time-Employee-flowchart.drawio.png)
+![VTS Manage Time Manager Flowchart](./VTS-Manage-Time-Manager-flowchart.drawio.png)
 
 #### **Sequence Diagram**
 
@@ -138,9 +136,8 @@ The sequence diagram below details the interaction between system components and
 
 ---
 
-
---- 
 ## **Pseudo-Code: Manage Time Use Case**
+
     BEGIN ManageTimeUseCase
       INPUT: Employee credentials (authenticated via portal)
 
@@ -186,5 +183,3 @@ The sequence diagram below details the interaction between system components and
               - Submit a new request.
               - Exit the application.
     END ManageTimeUseCase
-
-
