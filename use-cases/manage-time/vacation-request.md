@@ -1,19 +1,13 @@
-## Use Case: Manage Times
+# Create Vacation Request
 
-### Actor
+**Goal:** Submit a vacation time request.
 
-Employee
-
-### Goal
-
-Submit a vacation time request.
-
-### Preconditions
+**Preconditions**
 
 - The employee is authenticated and identified in the system.
 - The employee has privileges to manage their vacation time.
 
-### Main Flow
+**Steps**
 
 1. The employee accesses the Vacation Time System (VTS) via a link in the intranet portal.
 2. VTS displays the employee’s vacation time requests and balances for the past 6 months and up to 18 months ahead.
@@ -32,18 +26,14 @@ Submit a vacation time request.
 
 ---
 
-### **Flowchart: Main Flow**
-
-The following flowcharts illustrate the main flow of the Vacation Tracking System (VTS), showcasing the process from request submission to approval and notification.
+## **Flowchart**
 
 ![VTS Manage Time Main Flow Employee Flowchart](../../images/flowcharts/VTS-Manage-Time-Employee-flowchart.drawio.png)
 ![VTS Manage Time Main Flow Employee Flowchart](../../images/flowcharts/VTS-Manage-Time-Manager-flowchart.drawio.png)
 
 ---
 
-### **Sequence Diagram**
-
-The sequence diagram below details the interaction between system components and actors during the vacation request and approval process.
+## **Sequence Diagram**
 
 ![VTS Manage Time Main flow Sequence Diagram](../../images/diagrams/sequence-diagrams/VTS-Manage-Time-Sequence-Diagram.drawio.png)
 

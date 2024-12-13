@@ -1,4 +1,4 @@
-### Edit Pending Request
+# Edit Pending Request
 
 **Goal:** Edit the title, description, or dates of a pending vacation request.
 
