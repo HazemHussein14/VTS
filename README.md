@@ -10,8 +10,10 @@
 4. [Constraints](#constraints)
 5. [Actors](#actors)
 6. [Domain Knowledge](#domain-knowledge)
-7. [Entities](#entities)
-8. [Pseudo-Code: Manage Time Use Case](#pseudo-code-manage-time-use-case)
+7. [Use Cases](#use-cases)
+8. [Entities](#entities)
+9. [Pseudo-Code: Manage Time Use Case](#pseudo-code-manage-time-use-case)
+
 
 ---
 
@@ -107,6 +109,14 @@ The Vacation Tracking System (VTS) empowers employees to manage their own vacati
 
 ---
 
+## **Use Cases**
+
+- [Manage Time](./use-cases/manage-time/)
+   - [Vacation Request](./use-cases/manage-time/vacation-request.md)
+   - [Edit Vacation Request](./use-cases/manage-time/edit-vacation-request.md)
+   - [Withdraw Vacation Request](./use-cases/manage-time/withdraw-vacation-request.md)
+   - [Cancel Vacation Request](./use-cases/manage-time/cancel-vacation-request.md)
+
 ## **Entities**
 
 1. **Employee**
@@ -168,67 +178,3 @@ The Vacation Tracking System (VTS) empowers employees to manage their own vacati
    - modified_at
    - modified_by
 
-## Visual Representations
-
-#### **Flowchart: Main System Flow**
-
-The following flowcharts illustrate the main flow of the Vacation Tracking System (VTS), showcasing the process from request submission to approval and notification.
-
-![VTS Manage Time Employee Flowchart](./VTS-Manage-Time-Employee-flowchart.drawio.png)
-![VTS Manage Time Manager Flowchart](./VTS-Manage-Time-Manager-flowchart.drawio.png)
-
-#### **Sequence Diagram**
-
-The sequence diagram below details the interaction between system components and actors during the vacation request and approval process.
-
-![VTS Sequence Diagram](./VTS-Manage-Time-Sequence-Diagram.drawio.png)
-
----
-
-## **Pseudo-Code: Manage Time Use Case**
-
-    BEGIN ManageTimeUseCase
-      INPUT: Employee credentials (authenticated via portal)
-
-      STEP 1: Display VTS link on the intranet portal.
-      STEP 2: On link selection, fetch the employee's:
-          - Current vacation requests (past 6 months).
-          - Vacation balances (up to 18 months in the future).
-
-      STEP 3: If employee opts to create a new request:
-          3.1: Prompt for vacation category with a positive balance.
-          3.2: Provide a calendar for date(s) selection.
-          3.3: Input:
-              - Desired dates.
-              - Hours per date (e.g., half-day = 4 hours).
-              - Title and description (short summary).
-
-      STEP 4: Validate inputs:
-          - If incomplete or invalid:
-              4.1: Redisplay form with highlighted errors.
-              4.2: Allow corrections or cancelation.
-          - If valid:
-              4.3: Submit the request.
-              4.4: Redirect employee to VTS home page.
-
-      STEP 5: Notify manager(s) via email (if approval required).
-
-      STEP 6: Manager Approval Process:
-          6.1: Manager logs into the VTS via email link or intranet portal.
-          6.2: Authenticate credentials (if required).
-          6.3: Display manager's dashboard with:
-              - Manager's vacation requests.
-              - Pending approval requests for subordinates.
-
-          FOR each pending request:
-              - Display request details.
-              - Prompt for approval or rejection:
-                  - If rejected: Manager must provide an explanation.
-                  - Update request state (approved/rejected).
-                  - Notify employee of the decision via email.
-
-          6.4: Allow manager to:
-              - Approve more requests.
-              - Submit a new request.
-              - Exit the application.
-    END ManageTimeUseCase
