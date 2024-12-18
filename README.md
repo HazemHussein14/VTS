@@ -11,8 +11,7 @@
 5. [Actors](#actors)
 6. [Domain Knowledge](#domain-knowledge)
 7. [Use Cases](#use-cases)
-8. [Entities](#entities)
-9. [Pseudo-Code: Manage Time Use Case](#pseudo-code-manage-time-use-case)
+8. [Data Model](#data-model)
 
 
 ---
@@ -117,64 +116,6 @@ The Vacation Tracking System (VTS) empowers employees to manage their own vacati
    - [Withdraw Vacation Request](./use-cases/manage-time/withdraw-vacation-request.md)
    - [Cancel Vacation Request](./use-cases/manage-time/cancel-vacation-request.md)
 
-## **Entities**
+## **Data Model**
 
-1. **Employee**
-
-   - id
-   - name
-   - email
-   - role_id
-   - created_at
-   - created_by
-
-2. **Role**
-
-   - id
-   - role
-   - created_at
-   - created_by
-
-3. **Leave Type**
-
-   - id
-   - name
-   - description
-   - created_at
-   - created_by
-
-4. **Vacation Request Status**
-
-   - status_id
-   - status_name
-   - created_at
-   - created_by
-
-5. **Leave Balance**
-
-   - id
-   - leave_type_id
-   - employee_id
-   - balance
-   - available_balance
-   - created_at
-   - created_by
-   - modified_at
-   - modified_by
-
-6. **Vacation Request**
-   - request_id
-   - employee_id
-   - manager_id
-   - leave_type_id
-   - status_id
-   - start_date
-   - end_date
-   - requested_balance
-   - description
-   - rejection_message
-   - created_at
-   - created_by
-   - modified_at
-   - modified_by
-
+![VTS Data Model](./images/VTS-ERD.drawio.png)
